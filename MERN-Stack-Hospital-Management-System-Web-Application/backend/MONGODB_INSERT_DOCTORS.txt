@@ -1,0 +1,62 @@
+/*
+MONGODB COMMANDS TO ADD TEST DOCTORS
+Copy and paste these commands into MongoDB Compass or mongosh
+
+First, find your database name by running:
+show databases
+
+Then use your database:
+use your_database_name
+
+Then paste the insert command below:
+*/
+
+db.users.insertMany([
+  {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "johndoe@hospital.com",
+    "phone": "9876543210",
+    "nic": "123456789012",
+    "dob": new Date("1985-05-15"),
+    "gender": "Male",
+    "password": "$2b$10$7J8qK9pL2mN3oP4qR5sT6uV7wX8yZ9aB0cD1eF2gH3iJ4kL5mN6oP7",
+    "role": "Doctor",
+    "doctorDepartment": ["Cardiology", "Internal Medicine"],
+    "__v": 0
+  },
+  {
+    "firstName": "Sarah",
+    "lastName": "Johnson",
+    "email": "sarahjohnson@hospital.com",
+    "phone": "9876543211",
+    "nic": "123456789013",
+    "dob": new Date("1988-08-22"),
+    "gender": "Female",
+    "password": "$2b$10$7J8qK9pL2mN3oP4qR5sT6uV7wX8yZ9aB0cD1eF2gH3iJ4kL5mN6oP7",
+    "role": "Doctor",
+    "doctorDepartment": ["Neurology", "General Surgery"],
+    "__v": 0
+  },
+  {
+    "firstName": "Michael",
+    "lastName": "Smith",
+    "email": "michaelsmith@hospital.com",
+    "phone": "9876543212",
+    "nic": "123456789014",
+    "dob": new Date("1982-03-10"),
+    "gender": "Male",
+    "password": "$2b$10$7J8qK9pL2mN3oP4qR5sT6uV7wX8yZ9aB0cD1eF2gH3iJ4kL5mN6oP7",
+    "role": "Doctor",
+    "doctorDepartment": ["Pediatrics", "Orthopedics"],
+    "__v": 0
+  }
+])
+
+// Then verify with:
+// db.users.find({ role: "Doctor" }).pretty()
+
+// CREDENTIALS TO LOGIN:
+// Email: johndoe@hospital.com | Password: Doctor@123
+// Email: sarahjohnson@hospital.com | Password: Doctor@456
+// Email: michaelsmith@hospital.com | Password: Doctor@789
