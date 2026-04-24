@@ -51,10 +51,9 @@ COOKIE_EXPIRE=7
 
 ---
 
-## 🔗 Live Links
+## 🔗 Live  Working Link
 
-* **Frontend:** https://mern-hospital-management-system-eight.vercel.app
-* **Backend API:** https://mern-hospital-management-system-hdoa.onrender.com
+ https://mern-hospital-management-system-eight.vercel.app
 
 ---
 
